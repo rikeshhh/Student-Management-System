@@ -1,0 +1,169 @@
+body{
+    max-width: calc(1174px + 30px);
+    margin: 0 auto;
+    padding: 0px 15px;
+  
+    font-family: 'Manrope';
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    padding: 12px;
+}
+.heroSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+}
+.heroSection__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px;
+ }
+
+h1{
+    font-size: 68px;
+    font-weight: 900;
+}
+figure{
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.joinsToday{
+    display: flex;
+    gap: 12px;
+    
+}
+
+.joinsToday a{
+    padding: 12px 12px;
+    border: 2px solid black;
+}
+.enroll{
+    border: 1px solid #000;
+    padding: 12px 12px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+input{
+    display: block;
+    height: 45px;
+width: 100%;
+}
+.formContent{
+    display: flex;
+    gap: 4px;
+}
+#female,#male{
+    height: 30px;
+    width: 30px;
+    border-radius: 12px;
+}
+button{
+    padding: 8px 8px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+#loginBox{
+    width: 600px;
+      height: 600px;
+      display: none;
+      border: 2px solid black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; 
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    padding: 8px;
+}
+#mobile{
+    display: none;
+}
+@media screen and (max-width:650px) {
+    .heroSection{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid black;
+    }
+    .heroSection__content{
+        display: flex;
+        flex-direction: column;
+     }
+    
+    h1{
+        font-size: 68px;
+        font-weight: 900;
+    }
+ 
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    input{
+        display: block;
+        height: 45px;
+    width: 100%;
+    }
+    figure{
+        width: 200px;
+        height: 200px;
+    }
+    figure img{
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+    }
+    .formContent{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    #laptop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+        float: right;
+    }
+}

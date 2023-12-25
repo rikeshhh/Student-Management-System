@@ -1,0 +1,23 @@
+{
+  "student": [
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "",
+      "gender": "male",
+      "department": "saab",
+      "id": 1
+    }
+  ],
+  "teacher": [
+    {
+      "userInput": "dvdvxv",
+      "date": "12/25/2023",
+      "time": "1:13:55 PM",
+      "id": 3
+    }
+  ]
+}

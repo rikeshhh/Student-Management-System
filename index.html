@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Permanent+Marker&family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/945fb9bd69.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+   <header>
+    <nav id="laptop">
+      <figure>
+        <img src="" alt="logo" />
+      </figure>
+      <ul>
+        <li>Programs</li>
+        <li>Extra-Curricular</li>
+        <li>Our Staff</li>
+        <li>Gallery</li>
+      </ul>
+      <button onclick="openLogin()">Open Login Box</button>
+    </nav>
+    <nav id="mobile">
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+   </header>
+ 
+  <div class="container">
+    <div class="box">
+      <div id="loginBox">
+        <form action="" id="loginForm">
+          <input  name="email" placeholder="Enter your email">
+          <input type="password" name="password" placeholder="Enter your password">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+     </div>
+    <section class="heroSection">
+      <div class="heroSection__content">
+        <div class="intro">
+          <h1>Better Future For<br />Your Kids</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia,
+            ea ullam blanditiis reprehenderit ducimus excepturi sapiente, enim
+            magnam voluptatem repellat nam! Adipisci autem omnis natus sunt
+            cupiditate rerum alias cum.
+          </p>
+          <div class="joinsToday">
+            <a href="#enrollForm">Join Us Today</a>
+            <a>Watch Our Videos</a>
+          </div>
+        </div>
+          <figure>
+            <img src="model.png" alt="model" />
+          </figure>
+      </div>
+    </section>
+    
+    <section class="enroll" id="enrollForm">
+      <div class="forms">
+        <div>
+          <h2>Registration Forms</h2>
+          <span>Already Have an form <b>Log in</b></span>
+          <form id="myForm">
+            <div class="formContent">
+              <input type="text" name="firstName" placeholder="First Name"/>
+              <input type="text" name="lastName" placeholder="Last Name" />
+            </div>
+            <input type="email" name="email" placeholder="Enter an email"/>
+            <input type="email" name="confirmEmail" placeholder="Confirm an email"/>
+            <div class="formContent">
+              <input type="text" name="phoneNumber" placeholder="Phone Number" />
+              <input type="text" name="otherField" placeholder="Another Field" />
+            </div>
+            <div class="formContent">
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label><br />
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female"> Female</label><br />
+              </div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <select name="department" id="departments" style="width: 225px; height: 45px">
+                  <option value="volvo">Departments</option>
+                  <option value="saab">BCA</option>
+                  <option value="opel">BIT</option>
+                  <option value="audi">CSIT</option>
+                </select>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+              <button type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+     
+    </section>
+  </div>
+    <footer>
+      
+      <div>
+        <h3>Quick</h3>
+        <ul>
+          <li>Home</li>
+          <li>Subjects</li>
+          <li>News</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li>Help Desk</li>
+          <li>Contact</li>
+          <li>Privacy Counter</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div>
+        <h3>SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <input type="text">
+        <div>
+          <i class="fa-brands fa-facebook"></i>  
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div>
+        <h3>Available on</h3>
+        <div>
+          <button>Appstore</button>
+          <button>Google Play</button>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
