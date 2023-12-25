@@ -1,0 +1,31 @@
+/* Add this CSS to your HTML file or include it in a separate CSS file */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+#studentTable th, #studentTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+#studentTable thead {
+    background-color: #f2f2f2;
+}
+
+#studentTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#studentTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+

@@ -28,13 +28,16 @@
       <button onclick="openLogin()">Open Login Box</button>
     </nav>
     <nav id="mobile">
+     <button onclick="openLogin()">
       <i class="fa-solid fa-bars"></i>
+     </button>
     </nav>
    </header>
  
   <div class="container">
     <div class="box">
       <div id="loginBox">
+      <button onclick="closeLogin()">  <i class="fa-solid fa-delete-left"></i></button>
         <form action="" id="loginForm">
           <input  name="email" placeholder="Enter your email">
           <input type="password" name="password" placeholder="Enter your password">
@@ -57,9 +60,11 @@
             <a>Watch Our Videos</a>
           </div>
         </div>
+         <div id="model">
           <figure>
             <img src="model.png" alt="model" />
           </figure>
+         </div>
       </div>
     </section>
     

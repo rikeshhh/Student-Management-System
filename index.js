@@ -1,8 +1,11 @@
 function openLogin() {
-  let loginBox  = document.getElementById('loginBox')
+  let loginBox = document.getElementById('loginBox');
   loginBox.style.display = (loginBox.style.display === 'none') ? 'flex' : 'none';
-  body.style.filter = (loginBox.style.display === 'none') ? 'blur(0)' : 'blur(8px)';
+}
 
+function closeLogin() {
+  let loginBox = document.getElementById('loginBox');
+loginBox.style.display ="none"
 }
 
 document.getElementById("myForm").addEventListener("submit", function(event) {
