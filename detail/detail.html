@@ -7,22 +7,50 @@
     <link rel="stylesheet" href="detail.css">
 </head>
 <body>
-    <table id="studentTable" border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Phone Number</th>
-                <th>Gender</th>
-                <th>Department</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Data will be displayed here -->
-        </tbody>
-    </table>
+    <header>
+        <nav>
+
+            <div class="sideNav">
+                <form id="search-form" onsubmit="searchStudent(event)">
+                    <input type="search" placeholder="Search student" id="searchValue">
+                    <button type="submit">Search Student</button>
+                  </form>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="container_content">
+           
+            <div class="sideBody">
+             <div class="totalStudents">
+                 <h2>Total Student</h2>
+                 <span id="count"></h2>
+             </div>
+             <table id="studentTable" border="1">
+               
+                 
+                 <thead>
+                     <tr>
+                         <th>ID</th>
+                         <th>First Name</th>
+                         <th>Last Name</th>
+                         <th>Email</th>
+                         <th>Phone Number</th>
+                         <th>Gender</th>
+                         <th>Department</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <!-- Data will be displayed here -->
+                 </tbody>
+             </table>
+             <button id="show-more-btn">Show More</button>
+             <button id="show-less-btn">Show Less</button>
+
+            </div>
+        </div>
+    </div>
+   
 
 <script src="detail.js"></script>
 </body>

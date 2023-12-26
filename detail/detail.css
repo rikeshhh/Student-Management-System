@@ -2,6 +2,10 @@
 
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+  
+}
+header{
 }
 
 #studentTable {
@@ -28,4 +32,25 @@ body {
     background-color: #4CAF50;
     color: white;
 }
-
+.totalStudents{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sideNav{
+    width: 300px;
+    height: 100vh;
+    border: 2px solid black;
+}
+.container{
+    max-width: calc(1174px + 30px);
+    padding: 0px 15px;
+}
+.container_content{
+    display: flex;
+}
