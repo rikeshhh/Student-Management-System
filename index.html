@@ -16,9 +16,11 @@
   <body>
    <header>
     <nav id="laptop">
-      <figure>
-        <img src="" alt="logo" />
-      </figure>
+      <div>
+        <figure>
+          <img src="logo.png" alt="logo" />
+        </figure>
+      </div>
       <ul>
         <li>Programs</li>
         <li>Extra-Curricular</li>
@@ -39,7 +41,7 @@
       <div id="loginBox">
       <button onclick="closeLogin()">  <i class="fa-solid fa-delete-left"></i></button>
         <form action="" id="loginForm">
-          <input  name="email" placeholder="Enter your email">
+          <input  name="email" placeholder="Enter your email" required>
           <input type="password" name="password" placeholder="Enter your password">
           <button type="submit">Submit</button>
         </form>
@@ -57,7 +59,7 @@
           </p>
           <div class="joinsToday">
             <a href="#enrollForm">Join Us Today</a>
-            <a>Watch Our Videos</a>
+            <a href="www.youtube.com" target="_blank">Watch Our Videos</a>
           </div>
         </div>
          <div id="model">
@@ -72,23 +74,25 @@
       <div class="forms">
         <div>
           <h2>Registration Forms</h2>
-          <span>Already Have an form <b>Log in</b></span>
+          <span>Already registered an form? <b>thank you!</b></span>
           <form id="myForm">
             <div class="formContent">
-              <input type="text" name="firstName" placeholder="First Name"/>
-              <input type="text" name="lastName" placeholder="Last Name" />
+              
+              <input type="text" name="firstName" placeholder="First Name" required/>
+              <input type="text" name="lastName" placeholder="Last Name" required/>
             </div>
-            <input type="email" name="email" placeholder="Enter an email"/>
-            <input type="email" name="confirmEmail" placeholder="Confirm an email"/>
+            <input type="email" name="email" placeholder="Enter an email" id="email" required/>
+            <input type="email" name="confirmEmail" placeholder="Confirm an email" id="confirmEmail"  required/>
+
             <div class="formContent">
-              <input type="text" name="phoneNumber" placeholder="Phone Number" />
-              <input type="text" name="otherField" placeholder="Another Field" />
+              <input type="number" name="phoneNumber" placeholder="Phone Number" required />
+              <input type="text" name="otherField" placeholder="Another Field"  required/>
             </div>
             <div class="formContent">
               <div style="display: flex; justify-content: center; align-items: center;">
-                <input type="radio" id="male" name="gender" value="male" />
+                <input type="radio" id="male" name="gender" value="male" required/>
                 <label for="male">Male</label><br />
-                <input type="radio" id="female" name="gender" value="female" />
+                <input type="radio" id="female" name="gender" value="female" required/>
                 <label for="female"> Female</label><br />
               </div>
               <div style="display: flex; justify-content: center; align-items: center;">
@@ -103,6 +107,8 @@
             <div style="display: flex; justify-content: center;">
               <button type="submit">Register</button>
             </div>
+            <span id="errorName"></br> 
+
           </form>
         </div>
       </div>

@@ -26,11 +26,15 @@
 //   document.addEventListener('DOMContentLoaded', fetchData);
 document.addEventListener("DOMContentLoaded", function () {
   let page = 1;
-  const perPage = 10;
+  const perPage = 9;
   const showMoreButton = document.getElementById("show-more-btn");
   const showLessButton = document.getElementById("show-less-btn");
   const searchForm = document.getElementById("search-form");
-
+  const goToHome = document.getElementById("goToHome")
+  goToHome.addEventListener("click",()=>{
+    window.location.href = '../index.html';
+  })
+ 
   showMoreButton.addEventListener("click", function () {
     page++;
 
@@ -43,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fetchData(page);
     }
   });
+
   searchForm.addEventListener("submit", function (event) {
     event.preventDefault(); 
     searchStudent();
@@ -60,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const data = await response.json();
 
       renderData(data);
-      updateCount(data.length);
+      // updateCount(data.length);
     } catch (error) {
       console.error("Error fetching data:", error);
      
@@ -95,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", clickHandler);
     return button;
   }
-
+ 
   async function deleteItem(itemId) {
     const confirmation = confirm("Are you sure you want to delete this item?");
     if (confirmation) {
@@ -154,15 +159,16 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error:", error);
     }
   }
-
-  function updateCount(totalCount) {
-    const countElement = document.getElementById("count");
-    if (countElement) {
-      countElement.textContent = totalCount;
-    } else {
-      console.error("Element with id 'count' not found.");
-    }
-  }
+ 
+  // function updateCount(totalCount) {
+  //   const countElement = document.getElementById("count");
+  //   if (countElement) {
+  //     countElement.textContent = totalCount;
+  //   } else {
+  //     console.error("Element with id 'count' not found.");
+  //   }
+  // }
+ 
   async function searchStudent() {
     const searchValue = document
       .getElementById("searchValue")
@@ -178,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       const data = await response.json();
       renderData(data);
-      updateCount(data.length);
+      // updateCount(data.length);
       
     } catch (error) {
       console.error("Error fetching search results:", error);

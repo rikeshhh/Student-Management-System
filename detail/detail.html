@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/945fb9bd69.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="detail.css">
 </head>
 <body>
-    <header>
-        <nav>
-
-            <div class="sideNav">
-                <form id="search-form" onsubmit="searchStudent(event)">
-                    <input type="search" placeholder="Search student" id="searchValue">
-                    <button type="submit">Search Student</button>
-                  </form>
-            </div>
-        </nav>
-    </header>
+    
     <div class="container">
-        <div class="container_content">
-           
+        <div class="container__content">
+           <div>
+            <button id="goToHome">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+            
+           </div>
+            <h1>Student Maagement System</h1>
+            <form id="search-form" onsubmit="searchStudent(event)">
+                <input type="search" placeholder="Search student" id="searchValue">
+                <button type="submit">Search Student</button>
+              </form>
             <div class="sideBody">
-             <div class="totalStudents">
+             <!-- <div class="totalStudents">
                  <h2>Total Student</h2>
                  <span id="count"></h2>
-             </div>
+             </div> -->
              <table id="studentTable" border="1">
                
                  
@@ -44,8 +45,10 @@
                      <!-- Data will be displayed here -->
                  </tbody>
              </table>
-             <button id="show-more-btn">Show More</button>
+             <div class="showButton">
+                <button id="show-more-btn">Show More</button>
              <button id="show-less-btn">Show Less</button>
+             </div>
 
             </div>
         </div>

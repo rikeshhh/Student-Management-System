@@ -56,17 +56,6 @@
       "id": 5
     },
     {
-      "firstName": "Bimal",
-      "lastName": "Acharya",
-      "email": "bimal@gmail.com",
-      "confirmEmail": "bimal@gmail.com",
-      "phoneNumber": "9832773333",
-      "otherField": "r",
-      "gender": "male",
-      "department": "BCA",
-      "id": 6
-    },
-    {
       "firstName": "Nishan",
       "lastName": "Shrestha",
       "email": "nishan@gmail.com",
@@ -208,6 +197,94 @@
       "gender": "male",
       "department": "BCA",
       "id": 19
+    },
+    {
+      "firstName": "John",
+      "lastName": "cena",
+      "email": "john@gmail.com",
+      "confirmEmail": "john@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "ef",
+      "gender": "male",
+      "department": "BCA",
+      "id": 20
+    },
+    {
+      "firstName": "Sameer",
+      "lastName": "Paudel",
+      "email": "sameerDai@gmail.com",
+      "confirmEmail": "sameerDai@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "efwf",
+      "gender": "male",
+      "department": "BCA",
+      "id": 21
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "sdfs@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "sdfsf",
+      "gender": "male",
+      "department": "BCA",
+      "id": 22
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "user@gmail.com",
+      "confirmEmail": "ram@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "fd",
+      "gender": "male",
+      "department": "BCA",
+      "id": 23
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "admind@gma",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "fd",
+      "gender": "male",
+      "department": "BCA",
+      "id": 24
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "ef",
+      "gender": "male",
+      "department": "BCA",
+      "id": 25
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "ef",
+      "gender": "male",
+      "department": "BCA",
+      "id": 26
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "+9779808452856",
+      "otherField": "ef",
+      "gender": "male",
+      "department": "BCA",
+      "id": 27
     }
   ],
   "teacher": [

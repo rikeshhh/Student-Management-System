@@ -2,17 +2,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
   
-}
-header{
 }
 
 #studentTable {
     width: 100%;
+    height: auto;
     border-collapse: collapse;
-    margin-top: 20px;
     overflow-y: scroll;
+    max-height: 100vh;
+
 }
 
 #studentTable th, #studentTable td {
@@ -32,7 +31,7 @@ header{
     background-color: #4CAF50;
     color: white;
 }
-.totalStudents{
+/* .totalStudents{
     width: 200px;
     height: 200px;
     border-radius: 12px;
@@ -41,16 +40,53 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 .sideNav{
     width: 300px;
     height: 100vh;
     border: 2px solid black;
 }
+.showButton{
+    display: flex;
+    gap: 12px;
+}
+.sideBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+    gap: 12px;
+    border-radius: 12px;
+}
 .container{
     max-width: calc(1174px + 30px);
     padding: 0px 15px;
+    margin: 0 auto;
 }
-.container_content{
+.container__content{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+#search-form{
+    display: flex;
+     position: relative;
+}
+input{
+    width: 100%;
+    height: 46px;
+}
+#search-form button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+background-color: red;
+border: none;
+}
+button{
+    padding: 8px 8px;
+    border-radius: 8px;
+    background-color: skyblue;
 }
