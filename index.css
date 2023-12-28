@@ -1,12 +1,22 @@
 html {
     scroll-behavior: smooth;
   }
+  :root{
+    --primary-color: #edf2fc;
+    --secondary-color : #212121;
+}
 body{
     max-width: calc(1174px + 30px);
     margin: 0 auto;
     padding: 0px 20px;
-    background: var(--White, #FFF);
+    background: var(--primary-color);
+    color: var(--secondary-color);
     font-family: 'Manrope';
+}
+
+.dark_theme{
+    --primary-color: #000106;
+    --secondary-color : red;
 }
 header{
     height: 120px;
@@ -16,7 +26,7 @@ header figure img{
 }
  button{
     border-radius: 50px;
-    background: var(--Blue, #1700FF);
+    background:  #1700FF;
     color: white;
     font-size: 18px;
 font-style: normal;
@@ -328,6 +338,11 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 }
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
 .courses__card button{
     display: flex;
 padding: 10px 12px;
@@ -345,29 +360,40 @@ background: var(--c);
     flex-direction: column;
     padding: 150px 150px;
 }
+.testinomial__wrap{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .ourTestinomial__content{
 display: flex;
-justify-content: center;
-align-items: center;
-}
-.ourTestinomial__card{
-    display: grid;
-grid-template-columns: repeat(3,300px);
-
-}
-.ourTestinomial__card div{
-    
- border-radius: var(--borderRadius);
-flex-shrink: 0;
-border: 2px solid black;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 117px 34px;
-flex-direction: column;
-box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+overflow-x: scroll;
+width: 900px;
 }
 
+.ourTestinomial__content div{
+    width: 100%;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 20px;
+padding: 10px;
+flex: none;
+}
+.ourTestinomial__content img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+
+}
+.ourTestinomial__content img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+.ourTestinomial__content::-webkit-scrollbar{
+    display: none;
+}
 .enroll{
     padding: 12px 12px;
     justify-content: space-between;

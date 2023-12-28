@@ -7,7 +7,32 @@ function closeLogin() {
   let loginBox = document.getElementById("loginBox");
   loginBox.style.display = "none";
 }
+function changeBackground() {
+  document.body.classList.toggle("dark_theme");
+  console.log("click")
+  var themeIcon = document.getElementById("themeIcon");
 
+  themeIcon.classList.toggle("fa-sun");
+  themeIcon.classList.toggle("fa-moon");
+ }
+let scrollContainer = document.querySelector('.ourTestinomial__content');
+let backBtn = document.getElementById('backBtn');
+let nextBtn = document.getElementById('nextBtn');
+scrollContainer.addEventListener("wheel",(e)=>{
+e.preventDefault();
+scrollContainer.style.scrollBehavior = "auto";
+scrollContainer.scrollLeft += e.deltaY
+
+})
+
+ backBtn.addEventListener(('click'),()=>{
+   scrollContainer.style.scrollBehavior ="smooth";
+  scrollContainer.scrollLeft -=900;
+ })
+nextBtn.addEventListener(('click'),()=>{
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft +=900;
+})
 document
   .getElementById("myForm")
   .addEventListener("submit", async function (event) {

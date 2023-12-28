@@ -28,7 +28,7 @@ body {
 }
 
 #studentTable th {
-    background-color: #4CAF50;
+    background-color: #1700FF;
     color: white;
 }
 /* .totalStudents{
@@ -82,7 +82,8 @@ input{
     right: 0;
     top: 0;
     height: 45px;
-background-color: red;
+background-color: #1700FF;
+color: white;
 border: none;
 }
 button{
