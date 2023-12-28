@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "json-server": "^0.17.4"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.1"
   }
 }

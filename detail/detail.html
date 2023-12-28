@@ -10,6 +10,7 @@
 <body>
     
     <div class="container">
+        
         <div class="container__content">
            <div>
             <button id="goToHome">
@@ -18,10 +19,17 @@
             
            </div>
             <h1>Student Maagement System</h1>
-            <form id="search-form" onsubmit="searchStudent(event)">
-                <input type="search" placeholder="Search student" id="searchValue">
-                <button type="submit">Search Student</button>
-              </form>
+            <div>
+                <canvas id="myChart"></canvas>
+              </div>
+              <div style="display: flex;justify-content: space-between;align-items: center;">
+<h2 id="totalReg"></h2>
+                <form id="search-form" onsubmit="searchStudent(event)" style="width: 100%;">
+                    <input type="search" placeholder="Search student" id="searchValue">
+                    <button type="submit">Search Student</button>
+                  </form>
+              </div>
+          
             <div class="sideBody">
              <!-- <div class="totalStudents">
                  <h2>Total Student</h2>
@@ -59,7 +67,7 @@
         </div>
     </div>
    
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="detail.js"></script>
 </body>
 </html>

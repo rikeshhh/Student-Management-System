@@ -24,7 +24,8 @@
 //   }
 
 //   document.addEventListener('DOMContentLoaded', fetchData);
-document.addEventListener("DOMContentLoaded", function () {
+
+ 
   let page = 1;
   const perPage = 9;
   const showMoreButton = document.getElementById("show-more-btn");
@@ -46,22 +47,36 @@ document.addEventListener("DOMContentLoaded", function () {
       fetchData(page);
     }
   });
-document.getElementById('pageOne').addEventListener('click',()=>{
-page=1;
-fetchData(page)
-document.getElementById('pageOne').classList.add('active');
-})
-document.getElementById('pageTwo').addEventListener('click',()=>{
-  page=2;
-  fetchData(page)
-  document.getElementById('pageTwo').classList.add('active');
-})
-document.getElementById('pageThree').addEventListener('click',()=>{
-  page=3;
-  document.getElementById('pageThree').classList.add('active');
+  document.getElementById('pageOne').addEventListener('click', () => {
+    page = 1;
+    fetchData(page);
+  
+    document.getElementById('pageTwo').classList.remove('active');
+    document.getElementById('pageThree').classList.remove('active');
+  
+    document.getElementById('pageOne').classList.add('active');
+  });
+  
+  document.getElementById('pageTwo').addEventListener('click', () => {
+    page = 2;
+    fetchData(page);
+  
+    document.getElementById('pageOne').classList.remove('active');
+    document.getElementById('pageThree').classList.remove('active');
+  
+    document.getElementById('pageTwo').classList.add('active');
+  });
+  
+  document.getElementById('pageThree').addEventListener('click', () => {
+    page = 3;
+    fetchData(page);
+  
+    document.getElementById('pageOne').classList.remove('active');
+    document.getElementById('pageTwo').classList.remove('active');
 
-  fetchData(page)
-})
+    document.getElementById('pageThree').classList.add('active');
+  });
+  
 
   searchForm.addEventListener("submit", function (event) {
     event.preventDefault(); 
@@ -86,7 +101,59 @@ document.getElementById('pageThree').addEventListener('click',()=>{
      
     }
   }
-
+  const ctx = document.getElementById('myChart');
+  function countOccurrences(data, field) {
+    const counts = {};
+  
+    data.forEach(item => {
+      const value = item[field];
+      counts[value] = (counts[value] || 0) + 1;
+    });
+  
+    return counts;
+  }
+  async function fetchDataAndRenderChart() {
+    try {
+      const response = await fetch('http://localhost:3000/student');
+      if (!response.ok) {
+        throw new Error(`Failed to fetch data. Status: ${response.status}`);
+      }
+  
+      const data = await response.json();
+      
+      const departmentCounts = countOccurrences(data, 'department');
+      const labels = Object.keys(departmentCounts);
+      const dataValues = Object.values(departmentCounts);
+      renderChart(labels, dataValues);
+      const totalStudents = data.length;
+      const totalRegDiv = document.getElementById('totalReg');
+      totalRegDiv.textContent = `Total Students Registered: ${totalStudents}`;
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  }
+  
+  function renderChart(labels, dataValues) {
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: '# of Students',
+          data: dataValues,
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  }
+ 
   function renderData(data) {
     const tableBody = document.querySelector("#studentTable tbody");
     tableBody.innerHTML = ""; 
@@ -207,4 +274,4 @@ document.getElementById('pageThree').addEventListener('click',()=>{
   }
 
   fetchData(page);
-});
+  fetchDataAndRenderChart();
