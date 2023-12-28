@@ -1,18 +1,7 @@
 {
   "student": [
     {
-      "firstName": "Rikesh",
-      "lastName": "Shrestha",
-      "email": "rikeshmania123@gmail.com",
-      "confirmEmail": "rikeshmania123@gmail.com",
-      "phoneNumber": "+9779808452856",
-      "otherField": "dsd",
-      "gender": "male",
-      "department": "BCA",
-      "id": 1
-    },
-    {
-      "firstName": "Rikesha",
+      "firstName": "g",
       "lastName": "Shrestha",
       "email": "admind@gma",
       "confirmEmail": "rikeshmania123@gmail.com",
@@ -89,7 +78,7 @@
       "id": 9
     },
     {
-      "firstName": "rajan",
+      "firstName": "u",
       "lastName": "limbu ",
       "email": "rajan@gmail.com",
       "confirmEmail": "rajan@gmail.com",
@@ -395,6 +384,17 @@
       "gender": "male",
       "department": "BCA",
       "id": 38
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "12345677",
+      "otherField": "o",
+      "gender": "male",
+      "department": "BCA",
+      "id": 39
     }
   ],
   "teacher": [

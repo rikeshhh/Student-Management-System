@@ -40,13 +40,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchData(page);
   });
-
   showLessButton.addEventListener("click", function () {
     if (page > 1) {
       page--;
       fetchData(page);
     }
   });
+document.getElementById('pageOne').addEventListener('click',()=>{
+page=1;
+fetchData(page)
+document.getElementById('pageOne').classList.add('active');
+})
+document.getElementById('pageTwo').addEventListener('click',()=>{
+  page=2;
+  fetchData(page)
+  document.getElementById('pageTwo').classList.add('active');
+})
+document.getElementById('pageThree').addEventListener('click',()=>{
+  page=3;
+  document.getElementById('pageThree').classList.add('active');
+
+  fetchData(page)
+})
 
   searchForm.addEventListener("submit", function (event) {
     event.preventDefault(); 
