@@ -59,3 +59,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     alert("Wrong Password");
   }
 });
+function moveRight() {
+  let ball = document.getElementById("switch-ball");
+  ball.style.cssFloat ? "right" : "left";
+}
