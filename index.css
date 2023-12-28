@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     max-width: calc(1174px + 30px);
     margin: 0 auto;
