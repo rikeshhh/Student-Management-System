@@ -16,7 +16,7 @@ body{
 
 .dark_theme{
     --primary-color: #000106;
-    --secondary-color : red;
+    --secondary-color :#FFF;
 }
 header{
     height: 120px;
@@ -63,12 +63,7 @@ nav ul li{
     padding: 80px 0px;
 }
 
-.theme-switcher{
-    width: 140px;
-    height: 45px;
-    border: 2px solid black;
-    border-radius: 8px;
-}
+
 .switch-ball{
     width: 32px;
     height: 32px;
@@ -109,7 +104,6 @@ border: 1.5px dashed var(--Blue, #1700FF);
     object-fit: contain;
 }
 h1{
-    color: var(--Black, #111018);
     font-size: 64px;
     font-style: normal;
     font-weight: 500;
@@ -131,7 +125,8 @@ h1{
     align-items: center;
     gap: 10px;
     border-radius: 50px;
-    background: var(--Blue, #1700FF);color: white;
+    background:  #1700FF;
+    color: white;
 }
 .joinsToday :nth-child(2){
     padding: 16px 50px;
@@ -164,7 +159,6 @@ line-height: 16px; /* 100% */
 letter-spacing: 0.3px;
 }
 .benefits p{
-    color:#111018;
 text-align: center;
 font-size: 40px;
 font-style: normal;
@@ -190,7 +184,6 @@ gap: 12px;
     height: 30px;
     width: 30px;
     background-color: var(--c);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +191,6 @@ gap: 12px;
 }
 
 .benefit__sector h4{
-    color:  #111018;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
@@ -206,7 +198,6 @@ line-height: 24px; /* 133.333% */
 letter-spacing: 0.3px;
 }
 .benefit__sector p{
-    color:  #4F4E55;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -270,7 +261,6 @@ line-height: 16px; /* 100% */
 letter-spacing: 0.3px;
 }
 .joinUs h4{
-    color:  #111018;
 font-size: 40px;
 font-style: normal;
 font-weight: 500;
@@ -278,7 +268,6 @@ line-height: 54px; /* 135% */
 letter-spacing: 0.3px;
 }
 .joinUs p{
-    color:  #4F4E55;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -336,7 +325,6 @@ button{
 .courses__card div{
     padding: 16px;
     border-radius: 8px;
-background:  #FFF;
 display: flex;
 justify-content: center;
 align-items: start;
