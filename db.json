@@ -395,6 +395,72 @@
       "gender": "male",
       "department": "BCA",
       "id": 39
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "0987886",
+      "otherField": "efef",
+      "gender": "male",
+      "department": "BCA",
+      "id": 40
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "9808452856",
+      "otherField": "frefsfs",
+      "gender": "male",
+      "department": "BCA",
+      "id": 41
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "68686868",
+      "otherField": "refrferf",
+      "gender": "male",
+      "department": "BCA",
+      "id": 42
+    },
+    {
+      "firstName": "Rikesh",
+      "lastName": "Shrestha",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "565646",
+      "otherField": "ef",
+      "gender": "male",
+      "department": "CSIT",
+      "id": 43
+    },
+    {
+      "firstName": "0",
+      "lastName": "0",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "78787",
+      "otherField": "787",
+      "gender": "male",
+      "department": "BCA",
+      "id": 44
+    },
+    {
+      "firstName": "Rikesf",
+      "lastName": "Shreeeeeee",
+      "email": "rikeshmania123@gmail.com",
+      "confirmEmail": "rikeshmania123@gmail.com",
+      "phoneNumber": "12323232",
+      "otherField": "ef",
+      "gender": "male",
+      "department": "BCA",
+      "id": 45
     }
   ],
   "teacher": [

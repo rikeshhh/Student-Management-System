@@ -41,9 +41,9 @@ document
     const formData = new FormData(this); // 'this' refers to the form element
     const emailValue = formData.get("email");
     const confirmEmailValue = formData.get("confirmEmail");
-    const errorElement = document.getElementById("errorName");
     const emailInput = document.getElementById("email");
     const confirmEmailInput = document.getElementById("confirmEmail");
+
     try {
       if (emailValue === confirmEmailValue) {
         const student = {};
@@ -58,14 +58,20 @@ document
           },
           body: JSON.stringify(student),
         });
-        if (!response.ok) {
+
+        if (response.ok) {
+          // Form submitted successfully
+          alert("Form registered successfully!");
+          // Additional logic or redirection can be added here
+        } else {
           throw new Error(`Server error: ${response.status}`);
         }
-        alert("Your form has been submitted successfully");
       } else {
         alert("Email and confirm email must match");
         emailInput.classList.add("error");
         confirmEmailInput.classList.add("error");
+        alert("Failed to register form. Please try again later.");
+
       }
     } catch (error) {
       console.error("Error:", error);
